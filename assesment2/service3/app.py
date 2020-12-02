@@ -4,9 +4,10 @@ import random
 
 app = Flask(__name__)
 
-@app.route('/defence', methods=['GET'])
-def defence():
-    return Response(random.randint(1, 5), mimetype="text/plain")
+@app.route('/affluence', methods=['GET'])
+def affluence():
+    affluences = ["water", "fire", "lightning"]
+    return Response(random.choices(affluences), mimetype="text/plain")
 
 
 if __name__ == "__main__":

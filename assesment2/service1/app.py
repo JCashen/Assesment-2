@@ -5,15 +5,16 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
-    #gets an attack rating
-    attack = requests.get("http://service-2:5001/atack")
-    #gets defence rating
-    defence = requests.post("http://service-3:5002/defence")
-    #gets overall rating
-    rating = requests.get("http://service-4:5003/rating")
+    #gets a rating
+    rating = requests.get("http://localhost:5001/rating")
+    #gets affluence
+    affluence = requests.get("http://localhost:5002/affluence")
+    #gets character name
+    character = str(rating.text) + "," + str(affluence.text)
+    name = requests.post("http://localhost:5003/name", data=character)
 
 
-    return render_template('index.html', attack=attack.text, defence=defence.text, rating=rating.text)
+    return render_template('index.html', rating=rating.text, affluence=affluence.text, name=name.text)
 
 
 if __name__ == "__main__":

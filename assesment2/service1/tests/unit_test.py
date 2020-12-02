@@ -9,12 +9,11 @@ class TestBase(TestCase):
         return app
 
 class TestResponse(TestBase):
-    def test_animal_on_page(self):
+    def test_page(self):
         with patch("requests.get") as g:
             with patch("requests.post") as p:
-                g.return_value.text = "Lion"
-                p.return_value.text = "Roar"
-                g.return_value.text = "Bill"
+                g.return_value.text = "water"
+                p.return_value.text = "Jeanne"
 
                 response = self.client.get(url_for("index"))
-                self.assertIn(b'Lion makes the noise Roar and is called Bill', response.data)
+                self.assertIn(b'you pulled a water its affluence is water and its called Jeanne', response.data)

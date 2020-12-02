@@ -3,9 +3,10 @@ import random
 
 app = Flask(__name__)
 
-@app.route('/attack', methods=['GET'])
-def attack():
-    return Response(random.randint(1, 5), mimetype="text/plain")
+@app.route('/rating', methods=['GET'])
+def rating():
+    ratings = ["1 Star", "2 Star", "3 Star", "4 Star", "5 Star"]
+    return Response(random.choices(ratings), mimetype="text/plain")
 
 
 if __name__ == "__main__":
