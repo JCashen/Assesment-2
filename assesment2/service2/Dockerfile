@@ -8,4 +8,4 @@ COPY . .
 
 EXPOSE 5001
 
-ENTRYPOINT ["python", "app.py"]
+ENTRYPOINT ["gunicorn", "app.py"]
