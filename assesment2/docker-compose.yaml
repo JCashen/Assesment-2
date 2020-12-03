@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-  service-1:
+  service1:
     image: jcashen/app-1
     build: ./service1
     ports:
@@ -9,7 +9,7 @@ services:
       protocol: tcp
     deploy:
       replicas: 3
-  service-2:
+  service2:
     image: jcashen/app-2
     build: ./service2
     ports:
@@ -17,7 +17,7 @@ services:
       protocol: tcp
     deploy:
       replicas: 3
-  service-3:
+  service3:
     image: jcashen/app-3
     build: ./service3
     ports:
@@ -25,7 +25,7 @@ services:
       protocol: tcp
     deploy:
       replicas: 3
-  service-4:
+  service4:
     image: jcashen/app-4
     build: ./service4
     ports:

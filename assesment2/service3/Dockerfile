@@ -8,4 +8,4 @@ COPY . .
 
 EXPOSE 5002
 
-ENTRYPOINT ["gunicorn", "app.py"]
+ENTRYPOINT ["gunicorn", "--bind=0.0.0.0:5002", "app:app"]

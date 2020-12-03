@@ -16,4 +16,4 @@ class TestResponse(TestBase):
                 p.return_value.text = "Jeanne"
 
                 response = self.client.get(url_for("index"))
-                self.assertIn('you pulled a water its affluence is water and its called Jeanne', response.data)
+                self.assertIn(b'you rolled a water its affluence is water and its called Jeanne', response.data)

@@ -6,12 +6,12 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def index():
     #gets a rating
-    rating = requests.get("http://localhost:5001/rating")
+    rating = requests.get("http://service2:5001/rating")
     #gets affluence
-    affluence = requests.get("http://localhost:5002/affluence")
+    affluence = requests.get("http://service3:5002/affluence")
     #gets character name
     character = str(rating.text) + "," + str(affluence.text)
-    name = requests.post("http://localhost:5003/name", data=character)
+    name = requests.post("http://service4:5003/name", data=character)
 
 
     return render_template('index.html', rating=rating.text, affluence=affluence.text, name=name.text)
