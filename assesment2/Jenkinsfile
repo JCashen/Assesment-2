@@ -6,7 +6,6 @@ pipeline {
                 sh "./assesment2/scripts/ansible.sh"
             }
         }
-    stages {
         stage('setup') {
             steps {
                 sh "./assesment2/scripts/setup.sh"
