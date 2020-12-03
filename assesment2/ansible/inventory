@@ -1,0 +1,9 @@
+[swarm-managers]
+master
+
+[swarm-workers]
+worker1
+worker2
+
+[nginx]
+nginx
