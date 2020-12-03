@@ -1,4 +1,4 @@
 #! /bin/bash
 
-cd ansible
-ansible-playbook inventory playbook.yaml
+
+ansible-playbook ansible/inventory ansible/playbook.yaml
