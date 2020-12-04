@@ -1,4 +1,4 @@
 #! /bin/bash
 
 
-ansible-playbook assesment2/inventory assesment2/playbook.yaml
+ansible-playbook Assesment-2/assesment2/inventory Assesment-2/assesment2/playbook.yaml
