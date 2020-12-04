@@ -1,1 +1,6 @@
+flask
+flask-testing
+requests
+gunicorn
 pytest
+pytest-cov
