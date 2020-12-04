@@ -1,6 +1,6 @@
 #! /bin/bash
 
-ssh jenkins@swarm-master << EOF
+ssh swarm-manager << EOF
 docker pull jcashen/service1:latest
 docker pull jcashen/service2:latest
 docker pull jcashen/service3:latest
