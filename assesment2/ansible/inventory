@@ -1,9 +1,9 @@
 [swarm-managers]
-master
+10.154.0.21
 
 [swarm-workers]
-worker1
-worker2
+10.154.0.22
+10.154.0.23
 
 [nginx]
-nginx
+10.154.0.24
