@@ -4,14 +4,15 @@
   become: yes
   roles:
   - docker_install
-  - swarm_manager
+  - swarm-manager
 
 - name: Setup workers
   hosts: swarm-workers
   become: yes
   roles:
   - docker_install
-  - swarm_worker  
+  - swarm-worker-1
+  - swarm-worker-2  
 
 - name: nginx
   hosts: nginx
