@@ -1,9 +1,9 @@
 [swarm-managers]
-10.154.0.21
+swarm-manager
 
 [swarm-workers]
-10.154.0.22
-10.154.0.23
+swarm-worker-1
+swarm-worker-2
 
 [nginx]
-10.154.0.24
+nginx
