@@ -1,5 +1,3 @@
-- hosts: nginx
-  become: true
   vars:
   - install_directory: /opt/static-website-example
   tasks:
