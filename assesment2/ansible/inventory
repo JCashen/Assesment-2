@@ -5,5 +5,5 @@ swarm-manager
 swarm-worker-1
 swarm-worker-2
 
-[nginx]
+[nginx-group]
 nginx

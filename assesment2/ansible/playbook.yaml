@@ -14,7 +14,7 @@
   - swarm_worker  
 
 - name: nginx
-  hosts: nginx
+  hosts: nginx-group
   become: yes
   roles: 
   - nginx    
