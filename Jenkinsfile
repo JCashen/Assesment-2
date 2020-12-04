@@ -3,27 +3,27 @@ pipeline {
     stages {
         stage('setup') {
             steps {
-                sh "./assesment2/scripts/setup.sh"
+                sh "./scripts/setup.sh"
             }
         }
         stage('Test') {
             steps {
-                sh "./assesment2/scripts/test.sh"
+                sh "./scripts/test.sh"
             }
         }
         stage('Build') {
             steps {
-                sh "./assesment2/scripts/build.sh"
+                sh "./scripts/build.sh"
             }
         }
         stage('Push') {
             steps {
-                sh "./assesment2/scripts/push.sh"
+                sh "./scripts/push.sh"
             }
         }
         stage('Deploy') {
             steps {
-                sh "./assesment2/scripts/deploy.sh"
+                sh "./scripts/deploy.sh"
             }
         }
     }
