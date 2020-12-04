@@ -13,8 +13,4 @@
   - docker_install
   - swarm_worker  
 
-- name: nginx
-  hosts: nginx-group
-  become: yes
-  roles: 
-  - nginx    
+  
