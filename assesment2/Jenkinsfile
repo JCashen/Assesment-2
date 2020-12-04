@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('setup') {
             steps {
-                sh "./assesment2/scripts/setup.sh"
+                ansiblePlaybook credentialsId:'private-key', installation:'ansible', inventory:'ansible/inventory', playbook:'ansible/playbook.yml', disableHostKeyChecking: true
             }
         }
         stage('Test') {
