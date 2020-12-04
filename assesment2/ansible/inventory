@@ -1,9 +1,9 @@
 [swarm-managers]
-swarm-manager
+35.189.92.48
 
 [swarm-workers]
-swarm-worker-1
-swarm-worker-2
+35.189.104.189
+34.89.119.136
 
 [nginx]
-nginx
+35.246.93.57
