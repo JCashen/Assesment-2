@@ -1,12 +1,18 @@
-- name: "Init the Swarm"
-  community.general.docker_swarm:
+- name: clone git 
+  git:
+    repo: https://github.com/JCashen/Assesment-2.git
+    dest: /home/practicalproject
+    update: yes
+
+- name: "make the swarm"
+  docker_swarm:
     state: present
-- name: "Get Swarm info"
-  community.general.docker_swarm_info:
+- name: "Get swarm info"
+  docker_swarm_info:
   register: swarm_info
-- debug:
-    msg: "Swarm Info: {{ swarm_info }}"
-- name: "Get worker token"
+
+        
+- name: "Get a join token"
   add_host:
     name: "token"
     value: "{{ swarm_info['swarm_facts']['JoinTokens']['Worker'] }}"
