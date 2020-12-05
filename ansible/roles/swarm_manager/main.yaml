@@ -1,7 +1,7 @@
 - name: clone git 
   git:
     repo: https://github.com/JCashen/Assesment-2.git
-    dest: /home/practicalproject
+    dest: /home/Assesment-2
     update: yes
 
 - name: "make the swarm"
