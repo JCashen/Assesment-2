@@ -2,8 +2,8 @@
 - hosts: all
   become: yes
   roles:
-  - install_docker
-  
+  - docker_install
+
 - name: Setup manager
   hosts: swarm-managers
   become: yes
