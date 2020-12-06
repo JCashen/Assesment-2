@@ -5,7 +5,7 @@
   - docker_install
 
 - name: Setup manager
-  hosts: swarm-managers
+  hosts: swarm-manager
   become: yes
   roles:
   - swarm_manager
