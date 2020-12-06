@@ -1,4 +1,4 @@
-[swarm-manager]
+[swarm-managers]
 swarm-manager
 
 [swarm-managers:vars]
