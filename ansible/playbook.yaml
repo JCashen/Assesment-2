@@ -10,7 +10,7 @@
   roles:
   - swarm_manager
 
-  - name: Setup workers
+- name: Setup workers
   hosts: swarm-workers
   become: yes
   roles:
