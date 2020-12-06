@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/affluence', methods=['GET'])
 def affluence():
-    affluences = ["water", "fire", "lightning"]
+    affluences = ["ice", "dark", "light"]
     return Response(random.choices(affluences), mimetype="text/plain")
 
 

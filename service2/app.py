@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/rating', methods=['GET'])
 def rating():
-    ratings = ["1 Star", "2 Star", "3 Star", "4 Star", "5 Star"]
+    ratings = ["level 1", "level 2", "level 3", "level 4", "level 5"]
     return Response(random.choices(ratings), mimetype="text/plain")
 
 

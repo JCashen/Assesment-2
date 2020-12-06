@@ -11,35 +11,35 @@ def name():
     level = data[0]
     affluence = data[1]
 
-    if level == "1 Star" and affluence == "water":
+    if level == "level 1" and affluence == "ice":
         name = "Jeanne"
-    elif  level == "2 Star" and affluence == "water":
+    elif  level == "level 2" and affluence == "ice":
         name = "Orla"
-    elif  level == "3 Star" and affluence == "water":
+    elif  level == "level 3" and affluence == "ice":
         name = "Reuben"
-    elif  level == "4 Star" and affluence == "water":
+    elif  level == "level 4" and affluence == "ice":
         name = "Ferguson"
-    elif  level == "5 Star" and affluence == "water":
+    elif  level == "level 5" and affluence == "ice":
         name = "Perookie"
     
-    elif  level == "1 Star" and affluence == "fire":
+    elif  level == "level 1" and affluence == "dark":
         name = "Helllins"
-    elif  level == "2 Star" and affluence == "fire":
+    elif  level == "level 2" and affluence == "dark":
         name = "Allenula"
-    elif  level == "3 Star" and affluence == "fire":
+    elif  level == "level 3" and affluence == "dark":
         name = "Has"
-    elif  level == "4 Star" and affluence == "fire":
+    elif  level == "level 4" and affluence == "dark":
         name = "Lollivan"
-    elif  level == "5 Star" and affluence == "fire":
+    elif  level == "level 5" and affluence == "dark":
         name = "Cootha"
 
-    elif  level == "1 Star" and affluence == "lightning":
+    elif  level == "level 1" and affluence == "light":
         name = "Abanes"
-    elif  level == "2 Star" and affluence == "lightning":
+    elif  level == "level 2" and affluence == "light":
         name = "Visermas"
-    elif  level == "3 Star" and affluence == "lightning":
+    elif  level == "level 3" and affluence == "light":
         name = "Jostompa"
-    elif  level == "4 Star" and affluence == "lightning":
+    elif  level == "level 4" and affluence == "light":
         name = "Arimar"
     else:
         name = "Murell"

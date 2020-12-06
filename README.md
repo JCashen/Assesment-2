@@ -109,7 +109,6 @@ below is a screen grab of the home page, as you can see there is a star level an
 
 ![home][home]
 
-
 ## Authors
 Joshua Cashen
 
