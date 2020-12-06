@@ -4,14 +4,14 @@
   roles:
   - docker_install
 
-- name: Setup manager
-  hosts: swarm-managers
+
+- hosts: swarm-managers
   become: yes
   roles:
   - swarm_manager
 
-- name: Setup workers
-  hosts: swarm-workers
+
+- hosts: swarm-workers
   become: yes
   roles:
   - swarm_worker 
