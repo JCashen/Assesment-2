@@ -20,7 +20,6 @@
   apt_repository:
     repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
           
-
 - name: 'install docker'
   apt:
     pkg:
@@ -29,13 +28,11 @@
     - containerd.io
     state: latest
 
-
 - name: "add user to the docker group"
   user:
         name: "jenkins"
         group: docker
         state: present
-
 
 - name: Install Python3
   apt:
