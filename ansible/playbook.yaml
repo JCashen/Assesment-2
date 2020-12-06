@@ -8,12 +8,12 @@
   hosts: swarm-managers
   become: yes
   roles:
-  - swarm-managers
+  - swarm_managers
 
   - name: Setup workers
   hosts: swarm-workers
   become: yes
   roles:
-  - swarm-workers 
+  - swarm_workers 
 
   
