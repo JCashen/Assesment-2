@@ -60,11 +60,12 @@ Below is an entity relationship diagram (ERD) showing the structure of the datab
 
 ![ERD][ERD]
 
-
+### App Structure
 Below this is my app structure that shows how my services work tegether. 
 
 ![structure][structure]
 
+### Infrastructure
 below is the infastructure, as you can see jenkins, ansible and nginx are installed on the same machiene as this results in less configuration needed. The swarm is made of 1 manager aand 2 workers which are configured by ansible. nginx is also used as a load balancer. 
 
 ![infrstructure][infrastructure]
@@ -93,15 +94,19 @@ This is the risk assesment for this project, it shows the risks i though of befo
 pytest is used to run unit tests on the app. this was used as it includes a coverage chart which allows the user to see how much of the program has been tested.
 
 test service-1
+
 ![coverage1][coverage1]
 
 test service-2
+
 ![coverage2][coverage2]
 
 test service-3
+
 ![coverage3][coverage3]
 
 test service-4
+
 ![coverage4][coverage4]
 
 ## Front-End Design
