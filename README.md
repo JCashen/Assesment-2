@@ -123,7 +123,7 @@ Joshua Cashen
 [Service4]: https://i.imgur.com/Cu4sjE1.jpg
 [ERD]: https://i.imgur.com/6VZphc3.jpg
 [risk]: https://i.imgur.com/1Xj9ArL.jpg
-[ci]: https://i.imgur.com/l9IDTkU.jpg
+[ci]: https://i.imgur.com/ixuEzpc.jpg
 [structure]: https://i.imgur.com/SgudEja.jpg
 [infrastructure]: https://i.imgur.com/wpkS6w3.jpg
 [branch]: https://i.imgur.com/RwBqOpN.jpg
